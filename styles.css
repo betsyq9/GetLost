@@ -1,0 +1,226 @@
+body {
+  font-family: 'Petit Formal Script', cursive;
+  font-family: 'Oxygen', sans-serif;
+  box-sizing: border-box;
+  overflow: hidden-x;
+  }
+
+.nav {
+  width: 100%;
+  height: 4em;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  border: 3px white solid;
+  border-top: 6px white solid;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #00cca3;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .5em;
+  font-size: .9em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2em;
+  transition: 1s;
+  }
+
+.nav a:hover {
+  color: white;
+  background-color: #00cca3;
+ }
+
+.row {
+  display: block;
+  width: 100%;
+  height: 20em;
+  }
+
+
+.about {
+  background-color: #ffbb99;
+  }
+
+.euro_image {
+  background-color: #00ffcc;
+}
+
+.passport {
+  background-color: #99ffeb;
+}
+
+.luggage {
+  background-color: #ccffcc;
+}
+
+.beach_image {
+  background-color: white;
+}
+
+.contact {
+  background-color: #ffaa80;
+}
+
+.ex1 {
+  background-color: #00ffcc;
+}
+
+.ex2 {
+  background-color: #ffbb99;
+}
+
+.ex3 {
+  background-color: #00cca3;
+}
+
+.ex4 {
+  background-color: white;
+}
+
+.ex5 {
+  background-color: #ccffcc;
+}
+
+.ex6 {
+  background-color: #99ffeb;
+}
+
+
+/******** Columns *****************/
+[class*="col_"] {
+  display: block;
+  float: left;
+  height: 20em;
+  text-align: center;
+  padding: 4em 1em 1em 1em;
+  border: 3px white solid;
+  box-sizing: border-box;
+   }
+
+.col_1 {
+  width: 8.33%;
+  }
+
+.col_2 {
+  width: 16.66%;
+}
+
+.col_3 {
+  width: 25%;
+}
+
+.col_4 {
+  width: 33.33%;
+}
+
+.col_5 {
+  width: 41.66%;
+}
+
+.col_6 {
+  width: 50%;
+}
+
+.col_7 {
+  width: 58.33%;
+}
+
+.col_8 {
+  width: 66.66%;
+}
+
+.col_9 {
+  width: 75%;
+}
+
+.col_10 {
+  width: 83.33%;
+}
+
+.col_11 {
+  width: 91.66%;
+}
+
+.col_12 {
+  width: 100%;
+}
+
+[class*="col_"]:hover {
+    opacity: 1;
+}
+
+
+
+  /**************Media Queries***************/
+
+
+/**************Phone***************/
+@media (max-width: 600px) {
+
+.nav {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 3px white solid;
+  height: auto;
+  align-items: center;
+}
+
+.nav a {
+  padding: 1em;
+  justify-content: center;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  height: inherit;
+  }
+
+[class*="col_"] {
+    width: 100%;
+    height: 15em;
+    }
+}
+
+
+/**************Tablet***************/
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+
+  .row {
+
+  width: auto;
+  height: auto;
+  }
+
+  [class*="col_"] {
+    width: 50%;
+    height: 15em;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/******************/
